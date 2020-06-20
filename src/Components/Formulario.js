@@ -22,9 +22,9 @@ const Formulario = () => {
               placeholder="Type your name here"
               ref={register({
                 required: true,
-                maxLength: 35,
-                pattern: "[A-Za-z]{3}"
+                maxLength: 35
               })}
+              pattern="[A-Za-z]{3}"
             />
             {errors.name && (
               <span>
